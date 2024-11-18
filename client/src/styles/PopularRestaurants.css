@@ -1,0 +1,84 @@
+.popularRestaurantContainer {
+    margin: 3vh 10px 1vh 10px;
+    padding: 10px 0;
+    border-radius: 0.8rem;
+    height: 70vh;
+}
+
+.popularRestaurantContainer h3 {
+    margin-left: 2vw;
+}
+
+.popularRestaurant-body {
+    display: flex;
+    gap: 2vw;
+    margin: 3vh 2vw;
+    height: 55vh;
+    padding: 20px 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #3693C2 #f1f1f1; /* Customize scrollbar color */
+    scroll-snap-type: x mandatory; /* Adds smooth scrolling effect */
+}
+
+.popularRestaurant-body::-webkit-scrollbar {
+    height: 8px; /* Horizontal scrollbar height */
+}
+
+.popularRestaurant-body::-webkit-scrollbar-thumb {
+    background-color: #3693C2; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.popularRestaurant-body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Track color */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+
+.popularRestaurantCard {
+    width: 23vw;
+    height: 50vh;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 0.8rem;
+    border: 1px solid black;
+   /* Prevents card from shrinking */
+    scroll-snap-align: start; /* Aligns cards to the left when scrolling */
+}
+
+.popularRestaurantCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 15px 0px;
+    border-radius: 0.8rem;
+}
+
+.popularRestaurantCard img {
+    height: 34vh;
+    width: 19vw;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+    border-radius: 1rem;
+}
+
+.popularRestaurantCard-data {
+    text-align: center;
+}
+
+.popularRestaurantCard-data h6 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.popularRestaurantCard-data p {
+    font-size: 12px;
+    margin-top: -.4vw;
+    color: #fff;
+}
+
+.popularRestaurantCard-data h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: rgb(224, 47, 47);
+    color: white;
+}

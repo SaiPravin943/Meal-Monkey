@@ -1,0 +1,115 @@
+.new-product-page {
+    background-color: #50565d; /* Light background for the page */
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 4vh;
+}
+
+.new-product-container {
+    background-color: #54518c; /* White background for the container */
+    padding: 2vh 1.5vw;
+    width: 54vw;
+    margin-left: 23vw; /* Center align */
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.new-product-container h3 {
+    text-align: center;
+    color: #101111; /* Dark gray text */
+    margin-bottom: 3vh;
+    font-weight: 600;
+}
+
+.new-product-container button {
+    width: 50%;
+    margin-left: 25%;
+    background-color: #3182ce; /* Blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-product-container button:hover {
+    background-color: #2b6cb0; /* Slightly darker blue on hover */
+}
+
+.new-product-body {
+    height: 55vh; /* Reduced height for compactness */
+    overflow-y: scroll;
+    padding: 2vh 1.5vw;
+    margin-bottom: 2vh;
+}
+
+.new-product-body span {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.new-product-body input {
+    background-color: #edf2f7; /* Light gray input background */
+    border-color: #cbd5e0; /* Light gray border */
+    color: #0c0c0c; /* Dark text for readability */
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.new-product-body input:focus {
+    outline: none;
+    background-color: #e2e8f0; /* Slightly darker background on focus */
+    border-color: #3182ce; /* Blue border on focus */
+}
+
+.new-product-body label {
+    color: #000000; /* Dark gray labels */
+}
+
+.new-product-body span select {
+    background-color: #edf2f7; /* Light gray dropdown background */
+    border-color: #cbd5e0; /* Light gray border */
+    color: #000000; /* Dark text */
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.new-product-body span option {
+    color: #000000; /* Dark text for dropdown options */
+}
+
+.new-product-body section {
+    margin: 3vh 0;
+}
+
+.new-product-body section h4 {
+    color: #000000; /* Dark gray heading */
+    font-weight: 500;
+}
+
+.new-product-body section span {
+    display: flex;
+    justify-content: flex-start; /* Horizontal alignment */
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center; /* Align radio buttons with labels */
+}
+
+.new-product-body section span label {
+    color: #000000; /* Dark gray for labels */
+}
+
+.new-product-body section span input[type="radio"] {
+    accent-color: #3182ce; /* Blue radio buttons */
+    transform: scale(1.1); /* Slightly larger radio button */
+}
+
+/* Optional: Add hover effects for inputs and selects */
+.new-product-body input:hover,
+.new-product-body select:hover {
+    background-color: #e2e8f0; /* Subtle highlight */
+}

@@ -1,0 +1,152 @@
+/* Navbar Styles */
+.navbar {
+    height: 10vh;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 0 2rem;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar h3 {
+    margin: 0;
+    color: #ff9f00;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-content {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    background-color: #333;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+.nav-search input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.nav-search input::placeholder {
+    color: #aaa;
+}
+
+.nav-search-icon {
+    font-size: 1.5rem;
+    color: #ff9f00;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.search-result-data {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.search-result-data-close-btn {
+    color: #ff9f00;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Button Styling */
+.nav-content button {
+    padding: 8px 20px;
+    border: 1px solid #ff9f00;
+    color: #ff9f00;
+    border-radius: 25px;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav-content button:hover {
+    background-color: #ff9f00;
+    color: #fff;
+}
+
+/* Navbar Icons */
+.nav-content-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-profile,
+.nav-cart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-profile p,
+.nav-cart .cart-count {
+    margin: 0 0 0 5px;
+    color: #fff;
+}
+
+.navbar-icons {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Admin Navbar */
+.navbar-admin {
+    height: 10vh;
+    background-color: #0e1420;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-admin h3 {
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar-admin ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar-admin ul li {
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar-admin ul li:hover {
+    color: #ff9f00;
+}

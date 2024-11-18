@@ -1,0 +1,64 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #30373f;
+}
+
+/* All Users Page */
+.all-users-page {
+    padding: 15vh 3vw 3vh 3vw;
+    height: 100vh;
+    width: 100%;
+    color: aliceblue;
+}
+
+.all-users-page h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* User Cards Container */
+.user-cards {
+    margin-top: 4vh;
+    height: 70vh;
+    width: 100%;
+    padding: 2vh 1vw;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+/* Single User Card */
+.user-card {
+    background-color: #181818;
+    color: aliceblue;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* User Info Section */
+.user-info {
+    margin-bottom: 1rem;
+}
+
+.user-info h5 {
+    font-weight: 600;
+    color: rgb(231, 234, 238);
+    margin: 0;
+    font-size: 1rem;
+}
+
+.user-info p {
+    color: rgba(231, 234, 238, 0.831);
+    margin: 0.5rem 0 0 0;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,71 @@
+.HomePage {
+    margin-top: 12vh;
+    background-color: #3693C2;
+}
+
+.home-categories-container {
+    display: flex;
+    justify-content: flex-start;  /* Align items to the left */
+    overflow-x: auto;             /* Enable horizontal scrolling */
+    overflow-y: hidden;           /* Hide vertical scrollbar */
+    margin-top: 10vh;
+    width: 100%;
+    height: 50vh;
+    border-bottom: 1px solid black;
+    gap: 20px;                    /* Space between items */
+    padding-bottom: 20px;         /* Add some padding for aesthetics */
+    scrollbar-width: thin;        /* For Firefox */
+    scrollbar-color: #3693C2 #f1f1f1; /* Customize scrollbar color */
+}
+
+.home-categories-container::-webkit-scrollbar {
+    height: 8px;                 /* Horizontal scrollbar height */
+}
+
+.home-categories-container::-webkit-scrollbar-thumb {
+    background-color: #3693C2;   /* Scrollbar thumb color */
+    border-radius: 10px;         /* Rounded corners for the thumb */
+}
+
+.home-categories-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;   /* Track color */
+    border-radius: 10px;         /* Rounded corners for the track */
+}
+
+.home-category-card {
+    text-align: center;
+    width: 17vw;
+    height: 43vh;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid black;
+    margin-top: 3.5vh;
+    flex: 0 0 auto;              /* Prevent item from stretching */
+    transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+.home-category-card:hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    transform: scale(1.05);  /* Slightly scale up on hover */
+}
+
+.home-category-card img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: transform 0.3s ease; /* Smooth image scale on hover */
+}
+
+.home-category-card img:hover {
+    transform: scale(1.1); /* Slightly scale up image on hover */
+}
+
+.home-category-card h5 {
+    padding-top: 10px;
+    color: #4c4747;
+    font-weight: bold; /* Make the category name bolder */
+    text-transform: uppercase; /* Make the category name uppercase */
+    font-size: 1.2rem; /* Adjust font size for emphasis */
+}

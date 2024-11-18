@@ -1,0 +1,114 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b99e90;
+}
+
+/* All Orders Page */
+.all-orders-page {
+    padding: 15vh 3vw 3vh 3vw;
+    height: 100vh;
+    width: 100%;
+    color: aliceblue;
+}
+
+.all-orders-page h3 {
+    font-size: 1.5rem;
+    margin: 2vh 3vw;
+    color: rgb(84, 109, 130);
+}
+
+/* Orders Container */
+.all-orders {
+    height: 70vh;
+    margin: 2vh 2vw;
+    padding: 2vh 1.5vw;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Single Order */
+.all-orders-order {
+    display: flex;
+    gap: 30px;
+    background-color: #181818;
+    padding: 3vh;
+    border: 1px solid #e8e3e350;
+    border-radius: 0.8rem;
+    height: fit-content;
+    width: 100%;
+}
+
+/* Food Item Image */
+.all-orders-order img {
+    height: 100%;
+    width: 17vw;
+    border-radius: 0.3rem;
+}
+
+/* Order Data */
+.all-orders-order-data {
+    width: 100%;
+}
+
+.all-orders-order-data h4 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: rgb(51, 83, 111);
+}
+
+.all-orders-order-data p {
+    margin: 0;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: rgb(131, 136, 141);
+}
+
+.all-orders-order-data .user-details,
+.all-orders-order-data .order-details,
+.all-orders-order-data .address-details {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.all-orders-order-data .user-details span,
+.all-orders-order-data .order-details span,
+.all-orders-order-data .address-details span {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.all-orders-order-data .order-status {
+    margin-top: 10px;
+}
+
+.all-orders-order-data .order-status span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.action-buttons {
+    margin-top: 15px;
+}
+
+.action-buttons select,
+.action-buttons button {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.action-buttons button {
+    padding: 0px 20px;
+}
+
+.all-orders-order-data .form-select {
+    width: 200px;
+    height: 35px;
+}

@@ -1,0 +1,120 @@
+.restaurants-container {
+    height: fit-content;
+    display: flex;
+    width: 100%;
+    margin-top: -5vh;
+    padding-left: 2vw;
+}
+
+.restaurants-filter {
+    width: 30%;
+    border-right: 1px solid #c6c4c4;
+    border-top: 1px solid #c6c4c4;
+    min-height: 88vh;
+    padding-left: 2vw;
+    padding-top: 3vh;
+}
+
+.restaurants-body {
+    width: 100%;
+    height: 88vh;
+    padding: 0vh 1vw 0vh 1vw;
+}
+
+.restaurants-body h3 {
+    margin-top: 2vh;
+}
+
+.restaurants {
+    margin-top: 3vh;
+    width: 100%;
+    height: 75vh; /* Set a fixed height */
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 30px;
+    column-gap: 30px;
+    padding-bottom: 5vh;
+    padding-top: 3vh;
+    border: 1px solid black;
+    border-radius: 1vw;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #3693C2 #f1f1f1; /* Customize scrollbar color */
+}
+
+/* Custom scrollbar for horizontal scrolling */
+.restaurants::-webkit-scrollbar {
+    height: 8px; /* Horizontal scrollbar height */
+}
+
+.restaurants::-webkit-scrollbar-thumb {
+    background-color: #3693C2; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.restaurants::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Track color */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+
+.restaurant-item {
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+    
+    
+}
+
+.restaurant {
+    width: 21vw;
+    height: 55vh;
+    padding-top: 10px;
+    row-gap: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    border: 1px solid black;
+}
+
+.restaurant:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.restaurant img {
+    width: 86%;
+    margin-left: 1.5vw;
+    margin-bottom: 2vh;
+    height: 32vh;
+    border-radius: 0.8rem;
+}
+
+.restaurant .restaurant-data {
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+}
+
+.restaurant .restaurant-data h6 {
+    font-size: 1.4vw;
+    color: white;
+    margin: 0;
+}
+
+.restaurant .restaurant-data p {
+    font-size: .8vw;
+    color: white;
+    margin: 0;
+}
+
+.restaurant .restaurant-data h5 {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.restaurant .restaurant-data h5 p {
+    font-size: 0.8rem;
+    color: white;
+    margin: 0;
+}

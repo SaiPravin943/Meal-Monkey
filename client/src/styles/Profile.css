@@ -1,0 +1,229 @@
+.profilePage {
+    margin-top: 15vh;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.profileCard {
+    width: 25%;
+    margin: 5vh 2%;
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    height: fit-content;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profileCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.profileCard span {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profileCard span h5 {
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.profileCard span p {
+    margin: 0;
+    color: #555;
+    font-weight: 500;
+}
+
+.profileOrders-container {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profileOrders-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #444;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.profileOrders {
+    max-height: 60vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profileOrders::-webkit-scrollbar {
+    width: 8px;
+}
+
+.profileOrders::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 8px;
+}
+
+.profileOrder {
+    display: flex;
+    gap: 20px;
+    background-color: #fdfdfd;
+    padding: 15px;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+.profileOrder:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profileOrder img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profileOrder-data {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profileOrder-data h4 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.profileOrder-data ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.profileOrder-data ul li {
+    font-size: 0.9rem;
+    color: #777;
+    background: #f3f3f3;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.profileOrder-data div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.profileOrder-data div span p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.profileOrder-data div span p b {
+    color: #333;
+    font-weight: 600;
+}
+
+.profileOrder-data div span h5 {
+    font-size: 1rem;
+    color: #666;
+}
+
+.profileOrder-data div span h5 b {
+    color: #333;
+    font-weight: bold;
+}
+
+.rating-stars {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.rating-star-icons {
+    font-size: 1.5rem;
+    color: #ff9f40;
+}
+
+.star-rated {
+    color: #ffc107;
+}
+
+.status-active {
+    color: green;
+    font-weight: bold;
+}
+
+.status-cancelled {
+    color: red;
+    font-weight: bold;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .profilePage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profileCard,
+    .profileOrders-container {
+        width: 90%;
+    }
+
+    .profileOrder {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profileOrder img {
+        width: 100%;
+        height: auto;
+    }
+
+    .profileOrder-data {
+        width: 100%;
+    }
+}
